@@ -1,0 +1,9 @@
+<h1>Film List</h1>
+
+<ul>
+    <% @films.each do |film|%>
+    <li><%=film.title%> <em><%=film.year%></em></li>
+    <%end%>
+</ul>
+
+<%=link_to "Add a New Film", "films/new"%>
